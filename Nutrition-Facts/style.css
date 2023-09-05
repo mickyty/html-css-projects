@@ -1,0 +1,53 @@
+body{
+    font-family: 'open sans',sans-serif;
+}
+.label{
+    width:270px;
+    border:2px solid black;
+    margin:20px auto;
+    padding:0 7px;
+}
+.divider{
+    border-bottom: 1px solid black;
+    margin:2px 0;
+}
+.bold{
+    font-weight:800;
+}
+p{
+     margin:0; 
+    display: flex;
+    justify-content: space-between;
+}
+header h1{
+    margin:-4px 0;
+    text-align: center;
+    letter-spacing: 0.15px;
+}
+.large{
+    height:10px;
+    background-color: black; 
+}
+.calories-info{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.calories-info h2{
+    margin:0;
+}
+.calories-info span{
+    font-size:2.4em;
+    font-weight: 700;
+    margin:-5px -2px;
+}
+.small-text{
+    font-size:0.85rem;
+}
+.left-container p{
+    font-size:2em;
+    font-weight:700;
+   margin:-5px -2px;
+}
+
+
