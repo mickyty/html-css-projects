@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product-landing-page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
     <header id="header">
         <div class="logo">
-      <img id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="original trombones logo">
+            <img id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="original trombones logo">
         </div>
         <nav id="nav-bar">
-          <ul>
-            <li><a class="nav-link" href="#Features">Features</li>
-            <li><a class="nav-link" href="#How_it_works">How it works</li>
-            <li><a class="nav-link" href="#Pricing">Pricing</li>
+          <ul class="nav-links">
+            <li><a  href="#Features" class="nav-link">Features</a></li>
+            <li><a  href="#nav-link" class="nav-link">How it works</a></li>
+            <li><a  href="#Pricing"class="nav-link">Pricing</a></li>
           </ul>
         </nav>
       </header>
+
       <div class="container"></div>
         <section id="hero">
-          <h2>Handcrafted,home-made masterpieces</h2>
+            <h2>Handcrafted, home-made masterpieces</h2>
          <form id="form" action="https://www.freecodecamp.com/email-submit">
               <input name="email" id="email" type="email" placeholder="Enter your email address" required="">
               <input id="submit" type="submit" value="Get Started" class="btn">
@@ -29,19 +31,22 @@
         </section>
         <div class="container">
           <section id="features">
-            <div class="grid">
+             <div class="grid">
             <div class="icon">
-              <i class="fa fa-3x fa-fire"></i>
+         <i class="ri-fire-line ri-4x icon"></i>
+                
             </div>
             <div class="desc">
-              <h2>Fast shipping</h2>
-              <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.
-             </p>
+              <h2>Premium Materials</h2>
+              <p>Our trombones use the shiniest brass which is sourced locally.
+                This will increase the longevity of your purchase.
+              </p>
             </div>
             </div>
             <div class="grid" >
             <div class="icon">
-              <i class="fa fa-3x fa-truck"></i>
+              <i class="fa fa-3x fa-truck">
+              </i>
             </div>
             <div class="desc">
               <h2>Fast shipping</h2>
@@ -100,9 +105,9 @@
           </section>
           <footer>
             <ul>
-              <li><a href="#">Privacy</li>
-              <li><a href="#">Terms</li>
-              <li><a href="#">Contact</li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Contact</a></li>
             </ul>
             <span>Copyright 2016 ,original Trombones</span>
     

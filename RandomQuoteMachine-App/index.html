@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset ="utf-8">
+    <meta name="viewport" content="width=device-width",initial-scale=1, shrink-to-fit="no">
+    <link rel="stylesheet" href="style.css">
+    <title>Random Quote Machine</title>
+     <script>
+        const QUOTEBANK = [
+            {
+            quote:"Life is what happens to you, While you're busy making other plans.",
+            author :" John Lennon"
+
+            },
+            {
+            quote:"Nobody has ever measured, even poets, how much a heart can hold",
+            author :"Zelda Fitzgerald"
+
+            },
+            {
+                quote:"True love is putting someone else before yourself.",
+            author :" Frozen"
+
+            },
+            {
+
+            quote:"The only thing we never get enough of is love; and the only thing we never give enough of is love.",
+            author :" Henry Miller"
+            }
+
+        ]
+        window.onload = init;
+        function init(){
+            generateQuote()
+        }
+        function generateQuote(){
+            let quoteSize = QUOTEBANK.length;
+            let randomIndex = Math.floor(Math.random() * quoteSize);
+            let randomQuoteData = QUOTEBANK[randomIndex];
+
+
+             
+            document.getElementById("text").innerText = randomQuoteData.quote;
+            document.getElementById("author").innerText = randomQuoteData.author;
+         }
+        
+     </script>
+     <style>
+        *{
+            font-size:1.5rem;
+            margin:20px 20px 20px 20px;
+            text-align:center;
+        }
+     </style>
+    
+</head>
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> 
+    <header id="header" id="header-img" >
+        <nav id="nav-bar">
+            <button class="nav-link" >Nav-Link</button>
+
+        </nav>
+    </header>
+      <div id="Wrapper">
+        <div id="quote-box"> 
+                  <div id="text"></div>
+                  <div id="author"></div>
+                  <button id="new-quote" OnClick="generateQuote();" class="btn btn-success">New-quote</button>
+                  <div class="buttons">
+                  <a class="button" id="tweet-quote" target="_blank"class="btn btn-primary " href="twitter.com/intent/tweet">Tweet-Quote</a>
+                  <!-- <a class="button" id="tweet-quote" target="_blank"class="btn btn-primary " href="">Tweet-Quote</a> -->
+                  </div>
+                </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+ 
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Build a Drum Machine</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function play(str) {
+      var audio = document.getElementById(str);
+
+      audio.play();
+    }
+    window.document.onkeyup = function (event) {
+      let keystroke = event.key
+      if (keystroke === "q" || keystroke === "Q") {
+        play("Q")
+      }
+      else if (keystroke === "w" || keystroke === "W") {
+        play("W")
+      }
+      else if (keystroke === "e" || keystroke === "E") {
+        play("E")
+      }
+      else if (keystroke === "a" || keystroke === "A") {
+        play("A")
+      }
+      else if (keystroke === "s" || keystroke === "S") {
+        play("S")
+      }
+      else if (keystroke === "d" || keystroke === "D") {
+        play("D")
+      }
+      else if (keystroke === "z" || keystroke === "Z") {
+        play("Z")
+      }
+      else if (keystroke === "x" || keystroke === "X") {
+        play("X")
+      }
+      else if (keystroke === "c" || keystroke === "C") {
+        play("C")
+      }
+
+    }
+  </script>
+</head>
+
+<body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <div id="root">
+    <div class="container" id="drum-machine">
+      <!-- <div class="card">
+        <div class="card-body">
+        </div>
+      </div> -->
+
+      <div id="display">
+        <table>
+          <tr>
+            <td>
+              <div class="drum-pad btn btn-block btn-primary" id="drum-0" onClick="play('Q')"
+                style=" background-color:grey;margin-top:10px;box-shadow:black 3px 3px 5px;">Q
+                <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3" class="clip" id="Q"></audio>
+              </div>
+            </td>
+            <td>
+              <div class="drum-pad btn btn-block btn-primary" id="drum-1" onClick="play('W')" style=" background-color:grey;
+              margin-top:10px;
+              box-shadow:black 3px 3px 5px;">W
+                <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3" class="clip" id="W"></audio>
+              </div>
+            </td>
+            <td>
+              <div class="drum-pad btn btn-block btn-primary" id="drum-2" onClick="play('E')" style=" background-color:grey;
+              margin-top:10px;
+              box-shadow:black 3px 3px 5px;">E
+                <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3" class="clip" id="E"></audio>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="drum-pad btn btn-block btn-primary" id="drum-3" onClick="play('A')" style=" background-color:grey;
+              margin-top:10px;
+              box-shadow:black 3px 3px 5px;">A
+                <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3" class="clip" id="A"></audio>
+              </div>
+            </td>
+            <td>
+              <div class="drum-pad btn btn-block btn-primary" id="drum-4" onClick="play('S')" style=" background-color:grey;
+            margin-top:10px;
+            box-shadow:black 3px 3px 5px;">S
+                <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3" class="clip" id="S"></audio>
+              </div>
+            </td>
+            <td>
+              <div class="drum-pad btn btn-block btn-primary" id="drum-5" onClick="play('D')" style=" background-color:grey;
+              margin-top:10px;
+              box-shadow:black 3px 3px 5px;">D
+                <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3" class="clip" id="D"></audio>
+              </div>
+
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="drum-pad" id="drum-6" onClick="play('Z')" style=" background-color:grey;
+              margin-top:10px;
+              box-shadow:black 3px 3px 5px;">Z
+                <audio src="https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3" class="clip" id="Z"></audio>
+              </div>
+            </td>
+            <td>
+              <div class="drum-pad" id="drum-7" onClick="play('X')" style=" background-color:grey;
+              margin-top:10px;
+              box-shadow:black 3px 3px 5px;">X
+                <audio src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3" class="clip" id="X"></audio>
+              </div>
+            </td>
+            <td>
+              <div class="drum-pad" id="drum-8" onClick="play('C')" style=" background-color:grey;
+            margin-top:10px;
+            box-shadow:black 3px 3px 5px;">C
+                <audio src="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3" class="clip" id="C"></audio>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="controls-container"></div>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+body{
+    background-color:grey;
+    font-family: Russo One;
+}
+.container{
+    width:660px;
+    text-align:center;
+    background-color: white;
+    position: relative;
+ }
+
+ .container,#display{
+    width:332px;
+    height:272px;
+    display:inline-block;
+   
+} 
+#root{
+    display:flex;
+    justify-content:center ;
+    align-items: center;
+    height:100vh;
+}
+.container,#display,.
