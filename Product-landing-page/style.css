@@ -32,7 +32,7 @@ li{
 
  body{
     background-color: #eee;
-    font-family: 'lato',sans-serif;
+    font-family: 'Lato', sans-serif;
 } 
  
  #hero{
@@ -205,11 +205,14 @@ footer > span {
 .fa-3x{
     font-size:3em;
 }
-#features.icon{
+#features .icon{
     display:flex;
     align-items: center;
     justify-content: center;
     height:125px;
     width:20vw;
     color:darkorange;
+}
+.product > ol > li {
+    padding: 5px 0;
 }
